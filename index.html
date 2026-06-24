@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTOFOLIO SUPRIANTO</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="loader">
+    <div class="loader-content">
+        <div class="spinner"></div>
+        <h2 style="margin-top: 20px; letter-spacing: 3px;">OPICK.PROJECT</h2>
+    </div>
+</div>
+
+<header>
+    <div class="hero-container" data-aos="zoom-in">
+        <div class="avatar-wrapper">
+            <img src="img/avatar.jpg" alt="Avatar Profil" class="avatar">
+            <div class="status-dot"></div> 
+        </div>
+        <div class="hero-text">
+            <h1 id="typing"></h1>
+            <p class="info-badge">
+                <span>07TPLK002</span>
+                <span>221011450028</span>
+            </p>
+            <p class="hero-desc">Bukan sekadar mahasiswa, tapi calon Fullstack yang hobi ngopi ☕. Selamat datang di galeri tugas saya!</p>
+            <div class="hero-btns">
+                <a href="#tugas" class="btn-primary">Jelajahi Tugas</a>
+                <a href="#about" class="btn-secondary">Kenalan Yuk</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <div class="nav-container">
+        <div class="nav-logo">S<span>P</span></div>
+        
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#tugas">Projects</a>
+        </div>
+
+        <div class="switch-wrapper">
+            <span id="mode-text">Light Mode</span>
+            <label class="switch">
+                <input type="checkbox" id="darkToggle">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </div>
+</nav>
+
+<section id="about" class="section-light" data-aos="fade-up">
+    <div class="about-grid">
+        <div class="about-content">
+            <span class="pre-title">WHO AM I?</span>
+            <h2>Tentang Saya</h2>
+            <p>Halo! Saya <strong>Suprianto</strong>, biasa dipanggil <strong>Opik</strong>. Saat ini saya sedang mendalami dunia <strong>Web Development</strong> sebagai mahasiswa Teknik Informatika di <strong>Universitas Pamulang (UNPAM)</strong>. Saya memiliki ketertarikan dalam membangun website yang modern, responsif, dan bermanfaat. Bagi saya, coding bukan sekadar menulis program, tetapi juga proses belajar, berkreasi, dan memecahkan masalah.</p>
+        </div>
+        <div class="about-decor">
+            <div class="decor-box"><span>10+</span><p>Tugas</p></div>
+            <div class="decor-box"><span>A+</span><p>Target</p></div>
+        </div>
+    </div>
+</section>
+
+<section id="tugas">
+    <div class="section-header" data-aos="fade-right">
+        <h2>My Work</h2>
+        <div class="filter-ui">
+            <button onclick="filterTugas('all')" class="active">All</button>
+            <button onclick="filterTugas('p2')">P2</button>
+            <button onclick="filterTugas('p3')">P3</button>
+            <button onclick="filterTugas('p4')">P4</button>
+            <button onclick="filterTugas('p6')">P6</button>
+            <button onclick="filterTugas('p9')">P9</button>
+            <button onclick="filterTugas('p14')">P14</button>
+            <button onclick="filterTugas('p17')">P17</button>
+            <button onclick="filterTugas('p18')">P18</button>
+            <button onclick="filterTugas('p19')">P19</button>
+        </div>
+    </div>
+
+    <div class="tugas-container">
+        <div class="tugas-card p2" data-aos="fade-up">
+            <div class="card-img-wrapper">
+                <img src="img/tugas2.jpg" alt="Tugas 1">
+                <div class="overlay-tag">Logic</div>
+            </div>
+            <div class="card-body">
+                <h3>IF ELSE</h3>
+                <p>Kalkulator akademik berbasis logika <strong>IF ELSE</strong>. Simple, cepat, dan akurat.</p>
+                <div class="card-footer">
+                    <span class="tech-stack">PREVIEW</span>
+                    <a href="nilaiakademik-per2.php" class="preview-link">
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="tugas-card p3" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-img-wrapper">
+                <img src="img/tugas4.jpg" alt="Tugas 2">
+                <div class="overlay-tag">Logic</div>
+            </div>
+            <div class="card-body">
+                <h3>SWITCH CASE</h3>
+                <p>Implementasi <strong>Switch Case</strong> untuk sistem nilai yang lebih terstruktur.</p>
+                <div class="card-footer">
+                    <span class="tech-stack">PREVIEW</span>
+                    <a href="nilaiakademik-per4.php" class="preview-link">
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="tugas-card p4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-img-wrapper">
+                <img src="img/pencariandata.jpg" alt="Tugas 3">
+                <div class="overlay-tag">Logic</div>
+            </div>
+            <div class="card-body">
+                <h3>PENCARIAN DATA PRODUK</h3>
+                 <p>Pencarian Data <strong>Produk</strong> dikembangkan menggunakan kombinasi PHP dan MySQL untuk menyaring inventaris barang di dalam basis data secara dinamis.</p>
+                <div class="card-footer">
+                    <span class="tech-stack">PREVIEW</span>
+                    <a href="pencarian-data-produk.php" class="preview-link">
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="tugas-card p4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-img-wrapper">
+                <img src="img/pengurutandata.jpg" alt="Tugas 4">
+                <div class="overlay-tag">Logic</div>
+            </div>
+            <div class="card-body">
+                <h3>PENGURUTAN DATA PRODUK</h3>
+                 <p>Pengurutan Data <strong>Produk</strong> dikembangkan menggunakan kombinasi PHP dan MySQL untuk mengatur inventaris barang di dalam basis data secara dinamis.</p>
+                <div class="card-footer">
+                    <span class="tech-stack">PREVIEW</span>
+                    <a href="pengurutan-data-produk.php" class="preview-link">
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="tugas-card p4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-img-wrapper">
+                <img src="img/transaksipembayaran.jpg" alt="Tugas 4">
+                <div class="overlay-tag">Logic</div>
+            </div>
+            <div class="card-body">
+                <h3>TRANSAKSI PEMBAYARAN DATA</h3>
+                 <p>Transaksi Pembayaran<strong> Data</strong> sistem memproses pengurangan jumlah stok secara otomatis pada tabel produk setiap kali transaksi berhasil, lalu menyimpan detail pemesanan ke dalam tabel riwayat pembayaran lengkap dengan kalkulasi total biaya serta stempel waktu kejadian (timestamp).</p>
+                <div class="card-footer">
+                    <span class="tech-stack">PREVIEW</span>
+                    <a href="transaksi-pembayaran.php" class="preview-link">
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="tugas-card p6" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-img-wrapper">
+                <img src="img/bukutamu.jpg" alt="Tugas 4">
+                <div class="overlay-tag">Logic</div>
+            </div>
+            <div class="card-body">
+                <h3>BUKU TAMU</h3>
+                 <p>Buku<strong>Tamu</strong> setiap data masukan yang dikirimkan melalui formulir akan diproses dan ditulis secara dinamis ke dalam berkas penyimpanan lokal bernama bukutamu.dat sebagai basis data teks statis.</p>
+                <div class="card-footer">
+                    <span class="tech-stack">PREVIEW</span>
+                    <a href="tugas_buku_tamu/index.php" class="preview-link">
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="tugas-card p9" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-img-wrapper">
+                <img src="img/tanggal.jpg" alt="Tugas 4">
+                <div class="overlay-tag">Logic</div>
+            </div>
+            <div class="card-body">
+                <h3>FUNGSI TANGGAL</h3>
+                 <p><strong>Tanggal</strong> di gunakan untuk menampilkan data waktu server secara dinamis dan real-time.</p>
+                <div class="card-footer">
+                    <span class="tech-stack">PREVIEW</span>
+                    <a href="fungsitanggal-per9.php" class="preview-link">
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="tugas-card p9" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-img-wrapper">
+                <img src="img/string.jpg" alt="Tugas 4">
+                <div class="overlay-tag">Logic</div>
+            </div>
+            <div class="card-body">
+                <h3>FUNGSI STRING</h3>
+                 <p><strong>String</strong> di gunakan untuk memanipulasi dan memproses data teks dalam aplikasi.</p>
+                <div class="card-footer">
+                    <span class="tech-stack">PREVIEW</span>
+                    <a href="fungsistring-per9.php" class="preview-link">
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="tugas-card p14" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-img-wrapper">
+                <img src="img/keranjang.jpg" alt="Tugas 4">
+                <div class="overlay-tag">Logic</div>
+            </div>
+            <div class="card-body">
+                <h3>KERANJANG</h3>
+                 <p><strong>Keranjang</strong> setiap kali pengguna memilih item produk dan menekan tombol "+ Tambah ke Keranjang", sistem akan mendaftarkan objek tersebut ke dalam array global $_SESSION tanpa membebani memori lokal penjelajah, serta menyediakan fungsi penghapusan seluruh data array melalui tombol "Hapus Session".</p>
+                <div class="card-footer">
+                    <span class="tech-stack">PREVIEW</span>
+                    <a href="keranjang.php" class="preview-link">
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="tugas-card p17" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-img-wrapper">
+                <img src="img/catalog.jpg" alt="Tugas 4">
+                <div class="overlay-tag">Logic</div>
+            </div>
+            <div class="card-body">
+                <h3>CATALOG</h3>
+                 <p><strong>Catalog</strong> sistem melakukan kueri pengambilan seluruh data dari tabel produk untuk diekstraksi ke dalam struktur perulangan, serta mengintegrasikan pembacaan state cookies lokal guna melacak aktivitas interaksi terakhir pengguna saat menjelajahi produk.</p>
+                <div class="card-footer">
+                    <span class="tech-stack">PREVIEW</span>
+                    <a href="catalog.php" class="preview-link">
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="tugas-card p18" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-img-wrapper">
+                <img src="img/erorhandling.jpg" alt="Tugas 4">
+                <div class="overlay-tag">Logic</div>
+            </div>
+            <div class="card-body">
+                <h3>EROR HANDLING</h3>
+                 <p><strong>Eror Handling</strong> berfokus pada implementasi mekanisme penanganan kesalahan (error handling) dan debugging tak tertangkap (uncaught exceptions) pada aplikasi web berbasis PHP dan MySQL. Di sisi backend, program dirancang untuk mendeteksi kesalahan fatal secara dinamis—seperti kegagalan kueri koneksi akibat database target (db_latihan18) yang belum terdaftar di server lokal—lalu menghentikan alur program dengan melemparkan pesan mysqli_sql_exception yang memuat detail baris kode bermasalah secara presisi.</p>
+                <div class="card-footer">
+                    <span class="tech-stack">PREVIEW</span>
+                    <a href="pertemuan-18.php" class="preview-link">
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="tugas-card p19" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-img-wrapper">
+                <img src="img/laundry_sepatu.jpg" alt="Tugas 4">
+                <div class="overlay-tag">Logic</div>
+            </div>
+            <div class="card-body">
+                <h3>APLIKASI WEB</h3>
+                 <p><strong>Laundry Sepatu</strong> SneakClean adalah website layanan laundry sepatu berbasis web yang menyediakan informasi jenis layanan dan harga perawatan sepatu secara mudah, cepat, dan praktis untuk pelanggan.</p>
+                <div class="card-footer">
+                    <span class="tech-stack">PREVIEW</span>
+                    <a href="laundry_sepatu/" class="preview-link">
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<footer>
+    <p>Handcrafted by <strong>Opick</strong> © 2026</p>
+</footer>
+
+<button id="backToTop" title="Ke Atas">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // Init Animasi
+        AOS.init({ duration: 1000, once: true });
+
+        const toggle = document.getElementById("darkToggle");
+        const modeText = document.getElementById("mode-text");
+        const btt = document.getElementById("backToTop");
+
+        // Fungsi Update Label Mode
+        function updateModeLabel() {
+            if (document.body.classList.contains("dark")) {
+                modeText.innerText = "Dark Mode";
+            } else {
+                modeText.innerText = "Light Mode";
+            }
+        }
+
+        // Loader Logic
+        setTimeout(() => {
+            const loader = document.getElementById("loader");
+            loader.style.opacity = "0";
+            setTimeout(() => { loader.style.display = "none"; }, 500);
+        }, 800);
+
+        // Typing Effect
+        const textTyping = "SUPRIANTO (Opick)";
+        let i = 0;
+        function typing() {
+            if (i < textTyping.length) {
+                document.getElementById("typing").innerHTML += textTyping.charAt(i);
+                i++;
+                setTimeout(typing, 100);
+            }
+        }
+        typing();
+
+        // Dark Mode Logic
+        toggle.addEventListener("change", () => {
+            document.body.classList.toggle("dark");
+            updateModeLabel();
+            localStorage.setItem("mode", document.body.classList.contains("dark") ? "dark" : "light");
+        });
+
+        if (localStorage.getItem("mode") === "dark") {
+            document.body.classList.add("dark");
+            toggle.checked = true;
+            updateModeLabel();
+        }
+
+        // Back to Top Logic
+        window.onscroll = function() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                btt.style.display = "block";
+            } else {
+                btt.style.display = "none";
+            }
+        };
+
+        btt.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    });
+
+    // Filter Project Logic
+    function filterTugas(kategori) {
+        const cards = document.querySelectorAll(".tugas-card");
+        cards.forEach(card => {
+            if (kategori === "all" || card.classList.contains(kategori)) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+        });
+        AOS.refresh();
+    }
+</script>
+</body>
+</html>
